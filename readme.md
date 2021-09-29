@@ -1,6 +1,6 @@
 # This is a starter Todo List project in React Native
 
-## Use
+## Uses
 
 This app was built to try my hand at and test a few features in react native. This app uses the useState hook to manage an array holding text data inputted by the user. Clicking on the task after creation deletes it.
 
