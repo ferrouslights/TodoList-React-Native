@@ -7,11 +7,19 @@ export default function App() {
   const [task, setTask] = useState();
   const [tasks, setTasks] = useState([]);
 
+  // handles add task
+
   const handleAddTask = () => {
     Keyboard.dismiss();
-    setTasks([...tasks, task]);
-    setTask(null)
+    if (!task) {
+      console.log('ayyy theres no pizza here')
+    } else {
+      setTasks([...tasks, task]);
+      setTask(null)
+    }
   }
+
+  // handles delete task
 
   const handleDeleteTask = (index) => {
     let itemsCopy = [...tasks];
